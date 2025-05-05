@@ -1,0 +1,893 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#belongsTo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#externallyConducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#externallyConducts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ExternalEvaluation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isExternallyConductedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDocument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDocument">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isDocumentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProject">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasStage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasVideo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasVideo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isVideoOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasWebsite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasWebsite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isWebsiteOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#internallyConducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#internallyConducts">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#InternalEvaluation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisorCommittee"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInternallyConductedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Final_Year_Project_Process"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInvolvedIn"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isAffiliatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isAffiliatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isCoordinatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isCoordinatedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isCoordinatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isCoordinatorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#FYP_Coordinator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isCoordinatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isDocumentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isDocumentOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isExternallyConductedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isExternallyConductedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInternallyConductedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInternallyConductedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInvolvedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isLedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isLedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isMonitoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isMonitoredBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#FYP_Coordinator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSubmittedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSubmittedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSuperVisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSuperVisedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isVideoOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isVideoOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isWebsiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isWebsiteOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#leads -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#leads">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupLeader"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isLedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#prepares -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#prepares">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#registeredAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#registeredAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#submits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#submits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSubmittedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#supervises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#supervises">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isSuperVisedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasCGPA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasCGPA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasComments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDesignation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDesignation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEvaluationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEvaluationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasFileName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasFileName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMarks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMarks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgressDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgressDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasRollNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasRollNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasSubmissionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasSubmissionDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasTechnology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasTechnology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasURL">
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasUploadDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasUploadDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasWeekNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasWeekNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#CR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#CR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Capstone_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Capstone_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Capstone_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Capstone_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#CommitteMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#CommitteMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isDocumentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#externallyConducts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ExternalEvaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ExternalEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ExternalEvaluation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isExternallyConductedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#FYP_Coordinator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#FYP_Coordinator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isAffiliatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Final_Year_Project_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Final_Year_Project_Process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#involves"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasMember"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupMember"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#prepares"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isLedBy"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupLeader"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#submits"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupLeader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupLeader">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#leads"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#GroupMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#InternalEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#InternalEvaluation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isInternallyConductedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisorCommittee"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasWebsite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasVideo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasDocument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProgress"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectEvaluation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectIdea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectIdea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectPoster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectPoster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProgress">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isMonitoredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#FYP_Coordinator"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProposal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectProposal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectSRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectSRS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectStage">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasProject"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectTestingDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectTestingDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectVideo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isVideoOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ProjectWebsite">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#isWebsiteOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#RegularFaculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#RegularFaculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Student">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#belongsTo"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#registeredAt"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisorCommittee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#SuperVisorCommittee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#University"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
