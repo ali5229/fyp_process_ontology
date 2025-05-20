@@ -74,6 +74,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEvaluation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasEvaluation"/>
+    
+
+
     <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasFaculty -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#hasFaculty">
@@ -1488,61 +1494,6 @@
         </owl:equivalentClass>
         <rdfs:comment>The educational institution in which whole FYP process takes place</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Evaluation1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Evaluation1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#ExternalEvaluation"/>
-        <hasMarks>90/100</hasMarks>
-        <hasComments>The following Project is rated good</hasComments>
-        <isExternallyConductedBy rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Examiner"/>
-        <hasDesignation>Lecturer</hasDesignation>
-        <hasName>Asmat Hussain</hasName>
-        <hasEmail>asmat@gmail.com</hasEmail>
-        <externallyConducts rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Evaluation1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group"/>
-        <prepares rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Project"/>
-        <hasDomain>Artificial Intelligence</hasDomain>
-        <hasTitle>Peronalized Workout and Fitness Application</hasTitle>
-        <hasTechnology>Open Ai LLM through API</hasTechnology>
-        <isPreparedBy rdf:resource="http://www.semanticweb.org/home/ontologies/2025/3/untitled-ontology-7#Group1"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
